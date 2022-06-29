@@ -73,5 +73,3 @@ function game() {
 game();
 
 // console.log(playRound(playerSelection(), computerSelection()));
-
-// Create the check option to see if your input are valid
