@@ -5,9 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock Paper Scissors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
+    <main class="main-container">
+      <div class="top-section">
+        <img src="./images/logo.svg" alt="Logo" />
+        <div class="score">
+          <p id="ComputerScore">Computer Score</p>
+          <h4 id="ComputerNumber">0</h4>
+        </div>
+        <div class="score">
+          <p id="playerScore">Player Score</p>
+          <h4 id="playerNumber">0</h4>
+        </div>
+      </div>
+      <img src="./images/icon-rock.svg" alt="Rock Icon" class="button" />
+      <img src="./images/icon-paper.svg" alt="Paper Icon" class="button" />
+      <img
+        src="./images/icon-scissors.svg"
+        alt="Scissors Icon"
+        class="button"
+      />
+      <div class="rules">
+        <div class="rules-top">
+          <h2 class="rules-heading">Rules</h2>
+          <img src="./images/icon-close.svg" id="close-btn" alt="Close icon" />
+        </div>
+        <img src="./images/image-rules.svg" alt="" />
+      </div>
+      <h3 class="rules-btn">Rules</h3>
+    </main>
     <script src="./script.js"></script>
   </body>
 </html>
