@@ -16,15 +16,16 @@
 const rockBtn = document.querySelector("#rock");
 const paperBtn = document.querySelector("#paper");
 const scissorsBtn = document.querySelector("#scissors");
+const result = document.querySelector(".result");
 
 rockBtn.addEventListener("click", function () {
-  playRound("rock", computerSelection());
+  result.textContent = playRound("rock", computerSelection());
 });
 paperBtn.addEventListener("click", function () {
-  playRound("paper", computerSelection());
+  result.textContent = playRound("paper", computerSelection());
 });
 scissorsBtn.addEventListener("click", function () {
-  playRound("scissors", computerSelection());
+  result.textContent = playRound("scissors", computerSelection());
 });
 
 // (1 === Rock, 2 === Paper, 3 === Scissors)

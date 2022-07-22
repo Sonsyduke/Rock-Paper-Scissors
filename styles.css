@@ -225,6 +225,17 @@ body {
 
 /* ====================== END OF TOP-SECTION ====================== */
 
+/* ====================== RESULT-SECTION ====================== */
+.result-section {
+  margin: 50px 0;
+  text-align: center;
+}
+
+.result {
+  color: var(--white);
+  font-size: 2rem;
+}
+
 /* ====================== BUTTONS-SECTION ====================== */
 .buttons-section {
   display: flex;
