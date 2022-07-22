@@ -17,30 +17,46 @@
     <main class="main-container">
       <div class="top-section">
         <img src="./images/logo.svg" alt="Logo" />
-        <div class="score">
-          <p id="ComputerScore">Computer Score</p>
-          <h4 id="ComputerNumber">0</h4>
-        </div>
-        <div class="score">
-          <p id="playerScore">Player Score</p>
-          <h4 id="playerNumber">0</h4>
+        <div class="scores">
+          <div class="score">
+            <p class="scoreHeading">Computer Score</p>
+            <h4 id="computerNumber">0</h4>
+          </div>
+          <div class="score">
+            <p class="scoreHeading">Player Score</p>
+            <h4 id="playerNumber">0</h4>
+          </div>
         </div>
       </div>
-      <img src="./images/icon-rock.svg" alt="Rock Icon" class="button" />
-      <img src="./images/icon-paper.svg" alt="Paper Icon" class="button" />
-      <img
-        src="./images/icon-scissors.svg"
-        alt="Scissors Icon"
-        class="button"
-      />
+      <div class="buttons-section">
+        <img
+          src="./images/icon-rock.svg"
+          alt="Rock Icon"
+          class="button"
+          id="rock"
+        />
+        <img
+          src="./images/icon-paper.svg"
+          alt="Paper Icon"
+          class="button"
+          id="paper"
+        />
+        <img
+          src="./images/icon-scissors.svg"
+          alt="Scissors Icon"
+          class="button"
+          id="scissors"
+        />
+      </div>
+
       <div class="rules">
         <div class="rules-top">
           <h2 class="rules-heading">Rules</h2>
           <img src="./images/icon-close.svg" id="close-btn" alt="Close icon" />
         </div>
-        <img src="./images/image-rules.svg" alt="" />
+        <img src="./images/image-rules.svg" alt="Rules" />
       </div>
-      <h3 class="rules-btn">Rules</h3>
+      <button class="rules-btn">Rules</button>
     </main>
     <script src="./script.js"></script>
   </body>

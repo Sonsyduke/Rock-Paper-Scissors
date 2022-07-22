@@ -145,13 +145,6 @@ body {
   font-family: "Barlow Semi Condensed", sans-serif;
 }
 
-.main-container {
-  width: 60%;
-  margin: auto;
-  position: relative;
-  z-index: -1;
-}
-
 /* =========================== RULES =========================== */
 
 .rules {
@@ -184,3 +177,100 @@ body {
 }
 
 /* =========================== END OF RULES =========================== */
+
+/* =========================== MAIN-SECTION =========================== */
+.main-container {
+  width: 60%;
+  height: 90vh;
+  margin: auto;
+  position: relative;
+}
+
+/* ====================== TOP-SECTION ====================== */
+.top-section {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border: 2px solid var(--header-outline);
+  border-radius: 10px;
+}
+
+.scores {
+  display: flex;
+  gap: 50px;
+}
+
+.score {
+  background-color: var(--white);
+  padding: 10px;
+  width: 50%;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.scoreHeading {
+  color: var(--score-text);
+  text-transform: uppercase;
+}
+
+#computerNumber,
+#playerNumber {
+  font-size: 3rem;
+  color: var(--dark-text);
+}
+
+/* ====================== END OF TOP-SECTION ====================== */
+
+/* ====================== BUTTONS-SECTION ====================== */
+.buttons-section {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 50px 0;
+}
+
+.button {
+  padding: 30px;
+  width: 50px;
+  height: 50px;
+  border: 15px solid;
+  border-radius: 50%;
+  background-color: var(--white);
+}
+
+#rock {
+  border-color: var(--rock-color);
+}
+
+#paper {
+  border-color: var(--paper-color);
+}
+
+#scissors {
+  border-color: var(--scissors-color);
+}
+
+/* ====================== END OF BUTTONS-SECTION ====================== */
+
+.rules-btn {
+  border: 2px solid var(--header-outline);
+  background-color: transparent;
+  color: var(--white);
+  font-size: 1.5rem;
+  padding: 5px 30px;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.rules-btn:hover {
+  cursor: pointer;
+}
+
+.button:hover {
+  cursor: pointer;
+}
