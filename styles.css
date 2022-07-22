@@ -274,3 +274,22 @@ body {
 .button:hover {
   cursor: pointer;
 }
+
+/* ====================== MEDIA QUERIES ====================== */
+@media (max-width: 1000px) {
+  .main-container {
+    width: 70%;
+  }
+}
+
+@media (max-width: 700px) {
+  .main-container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 500px) {
+  .top-section {
+    flex-direction: column;
+  }
+}
