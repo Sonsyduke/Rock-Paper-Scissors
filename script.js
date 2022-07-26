@@ -17,6 +17,9 @@ const rockBtn = document.querySelector("#rock");
 const paperBtn = document.querySelector("#paper");
 const scissorsBtn = document.querySelector("#scissors");
 const result = document.querySelector(".result");
+const rulesBtn = document.querySelector(".rules-btn");
+const rules = document.querySelector(".rules");
+const closeBtn = document.querySelector("#close-btn");
 
 rockBtn.addEventListener("click", function () {
   result.textContent = playRound("rock", computerSelection());
@@ -97,3 +100,11 @@ function playRound(playerSelection, computerSelection) {
 // game();
 
 // console.log(playRound(playerSelection(), computerSelection()));
+
+rulesBtn.addEventListener("click", function () {
+  rules.classList.toggle("display");
+});
+
+closeBtn.addEventListener("click", function () {
+  rules.classList.toggle("display");
+});

@@ -148,7 +148,9 @@ body {
 /* =========================== RULES =========================== */
 
 .rules {
-  position: relative;
+  position: absolute;
+  top: 50px;
+  left: 25%;
   background-color: var(--white);
   display: none;
   width: 40%;
@@ -174,6 +176,10 @@ body {
   font-size: 2rem;
   color: var(--dark-text);
   text-transform: uppercase;
+}
+
+#close-btn:hover {
+  cursor: pointer;
 }
 
 /* =========================== END OF RULES =========================== */
